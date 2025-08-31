@@ -29,8 +29,16 @@
                         try {
                             const jsonObject = JSON.parse(e.target.result);
                             const flattenedObject = FlattenJSONObject(jsonObject, addNestedNamesCheckboxInput.checked);
-                            console.log(flattenedObject);
-                            DownloadJSON(flattenedObject, file.name);
+                            
+                            let newFileName = prompt("Enter a name for the flattened JSON file:", file.name);
+                            
+                            if (newFileName) {
+                                if (!newFileName.endsWith(".json")) {
+                                    newFileName += ".json";
+                                }
+
+                                DownloadJSON(flattenedObject, file.name);
+                            }
                         } catch (error) {
                             console.error("Error parsing JSON:", error);
                         }
