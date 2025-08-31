@@ -23,7 +23,7 @@ function FlattenJSONObject(jsonObj, addNestedNames=true) {
 
     function ProcessArray(arr, name) {
         arr.forEach((item, index) => {
-            const newName = `${addNestedNames ? name : ''}${index}`;
+            const newName = `${name}${index}`;
             ProcessValue(item, newName);
         });
     }
