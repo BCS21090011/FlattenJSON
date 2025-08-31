@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Flattener</title>
+    </head>
+    <body>
+        <label for="JSONFileInput">Select a JSON file:</label>
+        <input id="JSONFileInput" type="file" accept="application/json" />
+        <label for="addNestedNamesCheckboxInput">Add nested names:</label>
+        <input id="addNestedNamesCheckboxInput" type="checkbox" checked />
+        <script src="./FlattenJSON.js"></script>
+        <script src="./Downloader.js"></script>
+        <script>
+            const jsonFileInput = document.querySelector("#JSONFileInput");
+            const addNestedNamesCheckboxInput = document.querySelector("#addNestedNamesCheckboxInput");
+
+            function DownloadJSON(data, filename="FlattenedJSON.json") {
+                const jsonString = JSON.stringify(data, null, 2);
+                const blob = new Blob([jsonString], { type: "application/json" });
+                DownloadFile(blob, filename);
+            }
+
+            function HandleJSON_OnChange(event) {
+                const file = event.target.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        try {
+                            const jsonObject = JSON.parse(e.target.result);
+                            const flattenedObject = FlattenJSONObject(jsonObject, addNestedNamesCheckboxInput.checked);
+                            console.log(flattenedObject);
+                            DownloadJSON(flattenedObject, file.name);
+                        } catch (error) {
+                            console.error("Error parsing JSON:", error);
+                        }
+                    };
+                    reader.readAsText(file);
+                }
+            }
+            jsonFileInput.addEventListener("change", HandleJSON_OnChange);
+        </script>
+    </body>
+</html>
