@@ -1,0 +1,83 @@
+{
+    "Acknowledgement": {
+        ".a1": "好的，我將進一步為您協助。",
+        ".a2": "有什麼是我能為您協助的嗎？",
+        ".a3": "這裡理解為貴商家想 xxx"
+    },
+    "Short_Hold": {
+        ".s1": "讓我為您確認，我很快就回來。",
+        ".s2": "感謝您的等候，我還在為您確認中。",
+        ".s3": "不好意思，我還需更多時間為您查詢，感謝您的耐心等候。",
+        ".s4": "我們正在積極進行相關資訊查詢。",
+        ".s5": "正在進行資料核查，會儘快回應您。",
+        ".s6": "我們正針對您所反映的情況確認當中細節。",
+        ".s7": "關於您的問題，查詢目前在進行中。",
+        ".s8": "目前正在為此查詢進行確認，將盡力處理您的事宜。",
+        ".s9": "我們正在努力核查相關資訊，請您稍等片刻。"
+    },
+    "Hold_2_3_Mins": {
+        ".h1": "請稍候2-3分鐘，我們將為您查詢相關資料。",
+        ".h2": "感謝您的耐心等候！目前仍為您確認資料中，還請於線上稍候2-3分鐘。",
+        ".h3": "很抱歉讓您久等了。還請再給我們2-3分鐘，我們正積極為您確認相關資料中。"
+    },
+    "Further_Assist": {
+        ".f1": "請問您是否還有其他問題需要我們進一步協助呢？",
+        ".f2": "這裡理解為您的問題已經解決，如您稍後還有遇到相同問題可以再次上來尋求我們的協助。\n請問您是否還有其他問題需要我們進一步協助呢？"
+    },
+    "VD_No_Response": {
+        ".n1": "不好意思，請問您是否還在線上呢？"
+    },
+    "Closing_Solution_Provided": {
+        ".c1": "(MAN)Chat Closing_Resolved"
+    },
+    "Closing_VD_No_Response_No_Solution_Provided": {
+        ".c2": "(MAN)Chat Closing_Not Resolved_Idle"
+    },
+    "Closing_VD_No_Response_Solution_Provided": {
+        ".c3": "(MAN)Chat Closing_Resolved_Idle"
+    },
+    "Empathy": {
+		".em1": "我理解這件事實在讓您感到很困擾。",
+		".em2": "我理解因此問題所帶給您的不便",
+		".em3": "發生這樣的事，給您帶來不便了。",
+		".em4": "請您不要著急，我非常理解您的心情，我們一定會竭盡全力爲您解決的。"
+    },
+    "Empathy_Solution_Provided_VD_Not_Satisfied": {
+        ".em5": "這裡理解您的心情，針對目前情況，這裡能夠協助您（簡化描述solution），造成您的不便，還請您諒解。",
+		".em6": "感謝您的建議與回饋，我們將盡全力改善，希望能帶給您更好的服務體驗。",
+		".em7": "我理解您的心情，真的很抱歉，我們將盡全力改善，希望能帶給您更好的服務體驗。",
+		".em8": "請放心，我們將會記錄您寶貴的意見並反饋至相關部門，感謝您的資訊。",
+		".em9": "針對您剛反應的情況我們也會不斷去改善，希望改善後能給您帶來更好的服務體驗。"
+    },
+    "Apology": {
+		".ap1": "抱歉，以上為您提供錯誤信息。",
+		".ap2": "很抱歉讓您遇上這樣的狀況。",
+		".ap3": "造成任何不便之處深感抱歉。",
+		".ap4": "非常抱歉讓您遇到這樣的問題。",
+		".ap5": "對於此次您有如此不愉快的經驗，我們實在深感抱歉。",
+		".ap6": "對於您經歷此問題我們實在非常抱歉。"
+    },
+    "Pre_order_Inquiry": {
+        ".pre": "(MAN)Pre-Order Inq_490"
+    },
+    "Item_Removed_Reason_And_Payout_Status": {
+        ".item1": "經查詢，餐點被移除的原因是xxx。\n\n有關此訂單的款項，您將不會收到被移除的餐點的款項。",
+        ".item2": "經查詢，品項被移除的原因是餐點遺漏，但消費者反映餐點翻灑，\n\n有關此訂單的款項，您將不會收到被移除的品項的款項。"
+    },
+    "Normal_Order_Additional_Rider": {
+        ".add": "感謝您提供的資訊。\n\n我們已根據訂單需求 ，添加xxx位外送夥伴，總共xxx位外送夥伴，協助前往貴商家以利配送此筆訂單。\n\n提醒您：若外送夥伴需要額外的支援協助，可以隨時聯繫外送團隊要求增加支援。"
+    },
+    "Delivery_Late_614": {
+        ".614": "很抱歉讓您遇上這樣的狀況，經查詢，目前外送夥伴已領取訂單。\n\n目前系統訂單量過多，或是交通因素，您的訂單有些微的延遲。\n\n提醒您: 您可由系統查看外送夥伴的定位，以及預計到達之時間。"
+    },
+    "Normal_Internal_Note": {
+        ".be": "Name: (your full foodpanda email)\nDate and Time: {{h:MM tt dd mmm yyyy}}\nPIC Name:\nVendor/Order code:\nIssue:\nResolution: "
+    },
+    "Partial_Refund_Template": {
+        ".rf": "Agent Name: (your full email)\nTime and Date: {{h:MM tt dd mmm yyyy}}\nOrder code:\nThe total amount paid by customer: TWD\nItem Affected: (item name & quantity)\nAmount to be refunded:"
+    },
+    "Optional_Quick_Text": {
+        ".rd": "外送夥伴",
+        ".cx": "消費者"
+    }
+}
